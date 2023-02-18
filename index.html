@@ -18,9 +18,10 @@
 </head>
 
 <body class="font-['Open_Sans']">
-    <!-- TODO:  Herosection -->
-    <div class="relative bg-[#404eed]">
-        <div class="max-w-screen-xl mx-auto px-10">
+    <!-- TODO: Header and Hero Sections Container-->
+    <div class="relative bg-[#404eed] z-[999] sm:bg-[url('./src/assets/home/CenterHero.svg')] sm:bg-center sm:bg-cover overflow-hidden">
+        <!-- TODO: Header Wrapper Container-->
+        <div class="max-w-screen-xl mx-auto px-10 z-[999]">
             <header class="flex items-center justify-between py-5">
                 <!-- TODO: Logo -->
                 <a href="../../index.html" class="flex items-center gap-2">
@@ -40,19 +41,22 @@
                     </ul>
                 </nav>
                 <!-- TODO: Open Discord Button -->
-                <button class="bg-white px-5 py-2 rounded-full text-sm font-semibold hover:text-[#404eed] hover:drop-shadow-2xl">Open Discord
-                </button>
+                <button class="bg-white px-5 py-2 rounded-full text-sm font-semibold hover:text-[#404eed] hover:drop-shadow-2xl">Open Discord</button>
             </header>
         </div>
 
-        <div class="max-w-screen-xl w-full mx-auto flex items-center justify-center">
-            <div class="flex flex-col items-center gap-7 md:basis-[65%] basis-[90%] my-28">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl text-white font-['Gajraj_One'] font-bold uppercase">Imagine a
+        <!--TODO: Hero Wrapper Container -->
+        <div class="max-w-screen-xl mx-auto flex items-center sm:justify-left lg:justify-center z-[999] px-10 mb-28">
+            <!-- TODO: Hero Text and CTA Buttons -->
+            <div class="flex flex-col items-start lg:items-center gap-7 lg:gap-10 md:basis-[60%] basis-[90%] mt-24 mb-18">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl text-white font-['Gajraj_One'] font-bold uppercase tracking-wide">Imagine a
                     place...</h1>
-                <h3 class="text-white md:text-lg text-center">...where you can belong to a school club, a gaming group, or a
+                <h3 class="text-white text-sm lg:text-lg lg:text-center leading-loose">...where you can belong to a school club, a gaming group, or a
                     worldwide art community. Where just you and a handful of
                     friends can spend time together. A place that makes it easy to talk every day and hang out more often.</h3>
-                <div class="flex md:flex-row flex-col gap-5">
+
+                <!-- TODO: Two CTA Buttons -->
+                <div class="flex lg:flex-row flex-col gap-5 mb-10">
                     <button class="bg-white text-black px-7 py-3 rounded-full text-lg">
                         <span><i class="fa-solid fa-download"></i></span>
                         <span class="ml-2">Download for Windows</span>
@@ -63,11 +67,11 @@
             </div>
         </div>
 
-        <!-- <div class="">
-            <img src="./src/assets/home/CenterHero.svg" alt="">
-            <img src="./src/assets/home/LeftHero.svg" alt="">
-            <img src="./src/assets/home/RightHero.svg" alt="">
-        </div> -->
+        <!-- TODO: SVG's lies on the Hero Section -->
+        <div class="absolute top-0 left-0 z-[-999] h-[100%] w-[100%]">
+            <img class="hidden lg:block lg:absolute lg:bottom-0 lg:left-[-17%] lg:z-[1]" src="./src/assets/home/LeftHero.svg" alt="">
+            <img class="md:absolute md:bottom-0 md:right-[-14%]" src="./src/assets/home/RightHero.svg" alt="">
+        </div>
     </div>
 
     <!-- TODO: Main Section -->
@@ -111,10 +115,12 @@
 
     <!-- TODO: Footer Section -->
     <footer class="bg-[#23272a]">
+        <!-- TODO: Footer Wrapper Container -->
         <div class="max-w-screen-xl mx-auto px-10 py-20">
             <div class="pb-10 flex flex-col md:flex-row justify-between gap-10 md:gap-5">
+                <!-- TODO: Social Media Handle Links here... -->
                 <div class="md:basis-[20%] flex flex-col gap-5">
-                    <h1 class="font-['Gajraj_One'] text-4xl font-bold text-[#404eed] uppercase">Imagine a place</h1>
+                    <h1 class="font-['Gajraj_One'] text-4xl font-bold text-[#404eed] uppercase tracking-wide">Imagine a place</h1>
                     <div class="text-white">
                         <button class="flex items-center gap-2">
                             <span class="h-[18px]"><img class="h-[100%]" src="./src/assets/footer/flag.png" alt=""></span>
@@ -123,17 +129,15 @@
                         </button>
                     </div>
                     <div class="flex justify-left gap-7 items-center">
-                        <span class="text-2xl text-white hover:text-blue-500 cursor-pointer"><i
-                                class="fa-brands fa-twitter"></i></span>
-                        <span class="text-2xl text-white hover:text-pink-700 cursor-pointer"><i
-                                class="fa-brands fa-instagram"></i></span>
-                        <span class="text-2xl text-white hover:text-blue-700 cursor-pointer"><i
-                                class="fa-brands fa-facebook"></i></span>
-                        <span class="text-2xl text-white hover:text-red-700 cursor-pointer"><i
-                                class="fa-brands fa-youtube"></i></span>
+                        <span class="text-2xl text-white hover:text-blue-500 cursor-pointer"><i class="fa-brands fa-twitter"></i></span>
+                        <span class="text-2xl text-white hover:text-pink-700 cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                        <span class="text-2xl text-white hover:text-blue-700 cursor-pointer"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="text-2xl text-white hover:text-red-700 cursor-pointer"><i class="fa-brands fa-youtube"></i></span>
                     </div>
                 </div>
+
                 <!-- TODO: Gap should be there between these So, I have used "flex (70 - 20)" -->
+                <!-- TODO: Footer Navigation here... -->
                 <nav class="md:basis-[70%] text-white flex flex-wrap justify-between md:justify-evenly gap-5 md:p-0">
                     <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
                         <h4 class="text-[#404eed]">Product</h4>
@@ -176,6 +180,7 @@
                 </nav>
             </div>
 
+            <!-- TODO: Divider in the Footer Section here... -->
             <hr class="text-xl font-bold"/>
 
             <div class="flex justify-between items-center mt-8">
