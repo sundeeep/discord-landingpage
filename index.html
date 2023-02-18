@@ -45,6 +45,24 @@
             </header>
         </div>
 
+        <div class="max-w-screen-xl w-full mx-auto flex items-center justify-center">
+            <div class="flex flex-col items-center gap-7 md:basis-[65%] basis-[90%] my-28">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl text-white font-['Gajraj_One'] font-bold uppercase">Imagine a
+                    place...</h1>
+                <h3 class="text-white md:text-lg text-center">...where you can belong to a school club, a gaming group, or a
+                    worldwide art community. Where just you and a handful of
+                    friends can spend time together. A place that makes it easy to talk every day and hang out more often.</h3>
+                <div class="flex md:flex-row flex-col gap-5">
+                    <button class="bg-white text-black px-7 py-3 rounded-full text-lg">
+                        <span><i class="fa-solid fa-download"></i></span>
+                        <span class="ml-2">Download for Windows</span>
+                    </button>
+        
+                    <button class="bg-black px-7 py-3 rounded-full text-lg text-white">Open Discord in your browser</button>
+                </div>
+            </div>
+        </div>
+
         <!-- <div class="">
             <img src="./src/assets/home/CenterHero.svg" alt="">
             <img src="./src/assets/home/LeftHero.svg" alt="">
@@ -94,22 +112,37 @@
     <!-- TODO: Footer Section -->
     <footer class="bg-[#23272a]">
         <div class="max-w-screen-xl mx-auto px-10 py-20">
-            <div class="pb-10 flex justify-between gap-5">
-                <div>
-                    <h1 class="font-['Gajraj_One'] text-3xl font-bold text-[#404eed] uppercase">Imagine a place</h1>
-                    <div></div>
-                    <div></div>
+            <div class="pb-10 flex flex-col md:flex-row justify-between gap-10 md:gap-5">
+                <div class="md:basis-[20%] flex flex-col gap-5">
+                    <h1 class="font-['Gajraj_One'] text-4xl font-bold text-[#404eed] uppercase">Imagine a place</h1>
+                    <div class="text-white">
+                        <button class="flex items-center gap-2">
+                            <span class="h-[18px]"><img class="h-[100%]" src="./src/assets/footer/flag.png" alt=""></span>
+                            <p class="text-sm">English, USA</p>
+                            <span><i class="fa-solid fa-angle-down"></i></span>
+                        </button>
+                    </div>
+                    <div class="flex justify-left gap-7 items-center">
+                        <span class="text-2xl text-white hover:text-blue-500 cursor-pointer"><i
+                                class="fa-brands fa-twitter"></i></span>
+                        <span class="text-2xl text-white hover:text-pink-700 cursor-pointer"><i
+                                class="fa-brands fa-instagram"></i></span>
+                        <span class="text-2xl text-white hover:text-blue-700 cursor-pointer"><i
+                                class="fa-brands fa-facebook"></i></span>
+                        <span class="text-2xl text-white hover:text-red-700 cursor-pointer"><i
+                                class="fa-brands fa-youtube"></i></span>
+                    </div>
                 </div>
-
-                <nav class="basis-5/6 text-white flex flex-wrap justify-evenly gap-5">
-                    <ul class="flex-1 flex flex-col gap-2">
+                <!-- TODO: Gap should be there between these So, I have used "flex (70 - 20)" -->
+                <nav class="md:basis-[70%] text-white flex flex-wrap justify-between md:justify-evenly gap-5 md:p-0">
+                    <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
                         <h4 class="text-[#404eed]">Product</h4>
                         <li><a class="hover:underline mt-5" href="#">Download</a></li>
                         <li><a class="hover:underline mt-5" href="#">Nitro</a></li>
                         <li><a class="hover:underline mt-5" href="#">Status</a></li>
                     </ul>
 
-                    <ul class="flex-1 flex flex-col gap-2">
+                    <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
                         <h4 class="text-[#404eed]">Company</h4>
                         <li><a class="hover:underline mt-5" href="#">About</a></li>
                         <li><a class="hover:underline mt-5" href="#">Jobs</a></li>
@@ -117,7 +150,7 @@
                         <li><a class="hover:underline mt-5" href="#">Newsroom</a></li>
                     </ul>
 
-                    <ul class="flex-1 flex flex-col gap-2">
+                    <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
                         <h4 class="text-[#404eed]">Resources</h4>
                         <li><a class="hover:underline mt-5" href="#">College</a></li>
                         <li><a class="hover:underline mt-5" href="#">Support</a></li>
@@ -130,7 +163,7 @@
                         <li><a class="hover:underline mt-5" href="#">Community</a></li>
                     </ul>
 
-                    <ul class="flex-1 flex flex-col gap-2">
+                    <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
                         <h4 class="text-[#404eed]">Policies</h4>
                         <li><a class="hover:underline mt-5" href="#">Terms</a></li>
                         <li><a class="hover:underline mt-5" href="#">Privacy</a></li>
