@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/33c43788b8.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -21,13 +23,14 @@
         <div class="max-w-screen-xl mx-auto px-10">
             <header class="flex items-center justify-between py-5">
                 <!-- TODO: Logo -->
-                <div>
-                    <h1 class="font-bold text-xl text-white">Discord</h1>
-                </div>
+                <a href="../../index.html" class="flex items-center gap-2">
+                    <span class="text-white text-3xl"><i class="fa-brands fa-discord"></i></span>
+                    <span class="font-bold text-2xl text-white">Discord</span>
+                </a>
                 <!-- TODO: Primary Navigation -->
                 <nav class="flex-1 flex items-center justify-center">
                     <ul class="flex items-center gap-4">
-                        <li><a href="#" class="p-3 font-semibold text-white hover:underline">Download</a></li>
+                        <li><a href="./src/pages/download.html" class="p-3 font-semibold text-white hover:underline">Download</a></li>
                         <li><a href="#" class="p-3 font-semibold text-white hover:underline">Nitro</a></li>
                         <li><a href="#" class="p-3 font-semibold text-white hover:underline">Discover</a></li>
                         <li><a href="#" class="p-3 font-semibold text-white hover:underline">Safety</a></li>
@@ -37,7 +40,8 @@
                     </ul>
                 </nav>
                 <!-- TODO: Open Discord Button -->
-                <button class="bg-white px-5 py-2 rounded-full text-sm font-semibold hover:text-[#404eed] hover:drop-shadow-2xl">Open Discord</button>
+                <button class="bg-white px-5 py-2 rounded-full text-sm font-semibold hover:text-[#404eed] hover:drop-shadow-2xl">Open Discord
+                </button>
             </header>
         </div>
 
@@ -86,6 +90,72 @@
             </div>
         </section>
     </main>
+
+    <!-- TODO: Footer Section -->
+    <footer class="bg-[#23272a]">
+        <div class="max-w-screen-xl mx-auto px-10 py-20">
+            <div class="pb-10 flex justify-between gap-5">
+                <div>
+                    <h1 class="font-['Gajraj_One'] text-3xl font-bold text-[#404eed] uppercase">Imagine a place</h1>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <nav class="basis-5/6 text-white flex flex-wrap justify-evenly gap-5">
+                    <ul class="flex-1 flex flex-col gap-2">
+                        <h4 class="text-[#404eed]">Product</h4>
+                        <li><a class="hover:underline mt-5" href="#">Download</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Nitro</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Status</a></li>
+                    </ul>
+
+                    <ul class="flex-1 flex flex-col gap-2">
+                        <h4 class="text-[#404eed]">Company</h4>
+                        <li><a class="hover:underline mt-5" href="#">About</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Jobs</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Branding</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Newsroom</a></li>
+                    </ul>
+
+                    <ul class="flex-1 flex flex-col gap-2">
+                        <h4 class="text-[#404eed]">Resources</h4>
+                        <li><a class="hover:underline mt-5" href="#">College</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Support</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Safety</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Blog</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Feedback</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Developers</a></li>
+                        <li><a class="hover:underline mt-5" href="#">StreamKit</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Creators</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Community</a></li>
+                    </ul>
+
+                    <ul class="flex-1 flex flex-col gap-2">
+                        <h4 class="text-[#404eed]">Policies</h4>
+                        <li><a class="hover:underline mt-5" href="#">Terms</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Privacy</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Cookie Settings</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Guidelines</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Acknowledgments</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Licenses</a></li>
+                        <li><a class="hover:underline mt-5" href="#">Moderation</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <hr class="text-xl font-bold"/>
+
+            <div class="flex justify-between items-center mt-8">
+                <!-- TODO: Logo -->
+                <a href="../../index.html" class="flex items-center gap-2">
+                    <span class="text-white text-3xl"><i class="fa-brands fa-discord"></i></span>
+                    <span class="font-bold text-2xl text-white">Discord</span>
+                </a>
+                <!-- TODO: CTA Open Discord Button -->
+                <button class="px-5 py-2 rounded-full text-sm font-semibold bg-[#404eed] text-white hover:drop-shadow-2xl">Open Discord</button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
