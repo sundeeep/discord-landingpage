@@ -15,14 +15,6 @@ export const addChild = (parent,child) => {
     }
 } 
 
-// export const replaceChild = (newNode, oldNode) => {
-//     try {
-        
-//     } catch (error) {
-//         console.log(error.message);
-//     }
-// }
-
 export const getByID = (id) => {
     try {
         const element = document.getElementById(id);
@@ -226,7 +218,7 @@ const subNavBar = getByID("expandedSubNavBar");
 const expandSubNavListResponsive = (main) => {
     try {
         subNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
-        console.log(subNavBar.childNodes[0])
+        
         if(subNavBar.childNodes[0]){
             subNavBar.replaceChild(main, subNavBar.childNodes[0]);
             subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
