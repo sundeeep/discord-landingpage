@@ -15,6 +15,14 @@ export const addChild = (parent,child) => {
     }
 } 
 
+// export const replaceChild = (newNode, oldNode) => {
+//     try {
+        
+//     } catch (error) {
+//         console.log(error.message);
+//     }
+// }
+
 export const getByID = (id) => {
     try {
         const element = document.getElementById(id);
@@ -217,8 +225,14 @@ const ResponsiveNavBarArray = [
 const subNavBar = getByID("expandedSubNavBar");
 const expandSubNavListResponsive = (main) => {
     try {
-        addChild(subNavBar, main);
         subNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
+        console.log(subNavBar.childNodes[0])
+        if(subNavBar.childNodes[0]){
+            subNavBar.replaceChild(main, subNavBar.childNodes[0]);
+            subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
+            return;
+        }
+        addChild(subNavBar, main)
         subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
     } catch (error) {
         console.log(error.message);
@@ -235,25 +249,26 @@ const closeSubNavListResponsive = () => {
 }
 
 const responsiveNavBarList = getByID("responsiveNavBarList");
+
 const ul = createEle('ul');
-ul.setAttribute("class", "flex flex-col");
+ul.setAttribute("class", "flex flex-col gap-5 py-5");
 
 ResponsiveNavBarArray.map((NavList)=>{
     const li = createEle('li');
-
     const a = createEle('a');
     a.setAttribute("href", "#");
-    a.setAttribute("class", "text-black font-semibold");
+    a.setAttribute("class", "text-gray-800 hover:underline");
 
     if(NavList.subNavList.length !== 0){
-        a.innerText = `${NavList.navItem} >>>`
+        a.innerText = `${NavList.navItem}  >>>`
+        a.classList.add("font-bold")
         addChild(li, a);
         li.addEventListener("click", ()=>{
                 const main = createEle('main');
-                main.setAttribute("class", "flex flex-col gap-5 py-7");
+                main.setAttribute("class", "flex flex-col gap-5");
 
                 const section = createEle('section');
-                section.setAttribute("class", "flex justify-between sticky top-0");
+                section.setAttribute("class", "flex justify-between sticky top-0 bg-white py-5");
 
                 const backBtn = createEle('button');
                 backBtn.innerText = "< Back";
@@ -283,7 +298,7 @@ ResponsiveNavBarArray.map((NavList)=>{
                 addChild(main, section);
 
                 const subNav = createEle('nav');
-                subNav.setAttribute("class", "flex flex-col gap-5");
+                subNav.setAttribute("class", "flex flex-col gap-5 py-5");
 
                 NavList.subNavList.map((subNavItem) => {
                     const subUL = createEle('ul');
