@@ -1,6 +1,6 @@
 const createEle = (type) => {
     try {
-        const element = document.createElement("type");
+        const element = document.createElement(type);
         return element;
     } catch (error) {
         console.log(error.message);
