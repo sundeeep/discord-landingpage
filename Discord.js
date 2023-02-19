@@ -218,14 +218,16 @@ const subNavBar = getByID("expandedSubNavBar");
 const expandSubNavListResponsive = (main) => {
     try {
         subNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
-        
+
         if(subNavBar.childNodes[0]){
             subNavBar.replaceChild(main, subNavBar.childNodes[0]);
             subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
             return;
         }
+
         addChild(subNavBar, main)
         subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
+        
     } catch (error) {
         console.log(error.message);
     }
