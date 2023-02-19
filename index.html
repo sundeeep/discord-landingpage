@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord | Your Place to Talk and Share</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    />
 
     <script src="https://kit.fontawesome.com/33c43788b8.js" crossorigin="anonymous"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script src="./src/Helpers/navFooter.js" defer></script>
 </head>
 
 <body class="font-['Open_Sans']">
     <!-- TODO: Header and Hero Sections Container-->
-    <div class="relative bg-[#404eed] z-[999] sm:bg-[url('./src/assets/home/CenterHero.svg')] sm:bg-center sm:bg-cover overflow-hidden">
+    <div
+        class="relative bg-[#404eed] z-[999] sm:bg-[url('./src/assets/home/CenterHero.svg')] sm:bg-center sm:bg-cover overflow-hidden">
         <!-- TODO: Header Wrapper Container-->
-        <div class="max-w-screen-xl mx-auto px-10 z-[999]">
+        <div class="max-w-screen-xl mx-auto px-7 z-[999]">
             <header class="flex items-center justify-between py-5">
                 <!-- TODO: Logo -->
                 <a href="../../index.html" class="flex items-center gap-2">
@@ -29,105 +32,109 @@
                     <span class="font-bold text-2xl text-white">Discord</span>
                 </a>
                 <!-- TODO: Primary Navigation -->
-                <nav class="flex-1 flex items-center justify-center">
+                <nav class="flex-1 hidden lg:flex items-center justify-center transition-all duration-500 ease-in-out">
                     <ul class="flex items-center gap-4">
-                        <li><a href="./src/pages/download.html" class="p-3 font-semibold text-white hover:underline">Download</a></li>
-                        <li><a href="#" class="p-3 font-semibold text-white hover:underline">Nitro</a></li>
-                        <li><a href="#" class="p-3 font-semibold text-white hover:underline">Discover</a></li>
-                        <li><a href="#" class="p-3 font-semibold text-white hover:underline">Safety</a></li>
-                        <li><a href="#" class="p-3 font-semibold text-white hover:underline">Support</a></li>
-                        <li><a href="#" class="p-3 font-semibold text-white hover:underline">Blog</a></li>
-                        <li><a href="#" class="p-3 font-semibold text-white hover:underline">Careers</a></li>
+                        <li>
+                            <a href="./src/pages/download.html" class="p-3 font-semibold text-white hover:underline">Download</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-3 font-semibold text-white hover:underline">Nitro</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-3 font-semibold text-white hover:underline">Discover</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-3 font-semibold text-white hover:underline">Safety</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-3 font-semibold text-white hover:underline">Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-3 font-semibold text-white hover:underline">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-3 font-semibold text-white hover:underline">Careers</a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- TODO: Open Discord Button -->
-                <button class="bg-white px-5 py-2 rounded-full text-sm font-semibold hover:text-[#404eed] hover:drop-shadow-2xl">Open Discord</button>
+                <button class="bg-white px-5 py-2 rounded-full text-sm font-semibold hover:text-[#404eed] hover:drop-shadow-2xl">
+                    Open Discord
+                </button>
             </header>
         </div>
 
         <!--TODO: Hero Wrapper Container -->
-        <div class="max-w-screen-xl mx-auto flex items-center sm:justify-left lg:justify-center z-[999] px-10 mb-28">
+        <div class="max-w-screen-xl mx-auto flex items-center sm:justify-left lg:justify-center z-[999] px-7 md:mb-28">
             <!-- TODO: Hero Text and CTA Buttons -->
-            <div class="flex flex-col items-start lg:items-center gap-7 lg:gap-10 md:basis-[60%] basis-[90%] mt-24 mb-18">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl text-white font-['Gajraj_One'] font-bold uppercase tracking-wide">Imagine a
-                    place...</h1>
-                <h3 class="text-white text-sm lg:text-lg lg:text-center leading-loose">...where you can belong to a school club, a gaming group, or a
-                    worldwide art community. Where just you and a handful of
-                    friends can spend time together. A place that makes it easy to talk every day and hang out more often.</h3>
+            <div class="flex flex-col gap-5 md:gap-7 lg:gap-10 lg:text-center md:basis-[60%] w-full my-16 md:mt-24 md:mb-18 transition-all duration-500 ease-in-out">
+                <h1 class="text-2xl sm:text-5xl text-white font-['Gajraj_One'] font-bold uppercase tracking-wide transition-all duration-500 ease-in-out">
+                    Imagine a place...
+                </h1>
+                <h3 class="text-white text-sm sm:text-md lg:text-lg lg:text-center leading-loose transition-all duration-500 ease-in-out">
+                    ...where you can belong to a school club, a gaming group, or a
+                    worldwide art community. Where just you and a handful of friends can
+                    spend time together. A place that makes it easy to talk every day
+                    and hang out more often.
+                </h3>
 
                 <!-- TODO: Two CTA Buttons -->
-                <div class="flex lg:flex-row flex-col gap-5 mb-10">
-                    <button class="bg-white text-black px-7 py-3 rounded-full text-lg">
+                <div class="flex lg:flex-row flex-col items-start justify-between gap-5 md:mb-10 transition-all duration-500 ease-in-out">
+                    <button class="flex-1 bg-white text-black px-7 py-3 rounded-full sm:text-lg lg:text-md lg:px-3 transition-all duration-500 ease-in-out">
                         <span><i class="fa-solid fa-download"></i></span>
                         <span class="ml-2">Download for Windows</span>
                     </button>
-        
-                    <button class="bg-black px-7 py-3 rounded-full text-lg text-white">Open Discord in your browser</button>
+
+                    <button class="flex-1 bg-black px-7 py-3 rounded-full sm:text-lg lg:text-md lg:px-3 text-white transition-all duration-500 ease-in-out">
+                        Open Discord in your browser
+                    </button>
                 </div>
             </div>
         </div>
 
         <!-- TODO: SVG's lies on the Hero Section -->
-        <div class="absolute top-0 left-0 z-[-999] h-[100%] w-[100%]">
-            <img class="hidden lg:block lg:absolute lg:bottom-0 lg:left-[-17%] lg:z-[1]" src="./src/assets/home/LeftHero.svg" alt="">
-            <img class="md:absolute md:bottom-0 md:right-[-14%]" src="./src/assets/home/RightHero.svg" alt="">
+        <div class="block md:absolute top-0 left-0 z-[-999] h-[100%] w-[100%] transition-all duration-500 ease-in-out">
+            <img class="block relative left-[-30%] sm:left-[-15%] md:hidden lg:block lg:absolute lg:bottom-0 lg:left-[-14%] lg:z-[1] lg:h-[275px] xl:h-[50%] transition-all duration-500 ease-in-out" src="./src/assets/home/LeftHero.svg"
+                alt="" />
+            <img class="hidden md:block md:absolute md:bottom-0 md:right-[-10%] lg:h-[275px] xl:h-[50%] transition-all duration-500 ease-in-out" src="./src/assets/home/RightHero.svg" alt="" />
         </div>
     </div>
 
     <!-- TODO: Main Section -->
     <main class="flex flex-col">
-        
         <!-- TODO: First Feature:  -->
         <section class="md:h-[95vh] bg-white flex items-center justify-center">
-            <div class="md:max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between px-5 md:px-10">
-                <div class=""><img class="w-[100%]" src="./src/assets/home/Feature01.svg" alt=""></div>
+            <div class="md:max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between px-5 md:px-7">
+                <div class="">
+                    <img class="w-[100%]" src="./src/assets/home/Feature01.svg" alt="" />
+                </div>
                 <div class="md:w-[35%] flex flex-col justify-center gap-5 md:gap-7">
-                    <h3 class="text-xl sm:text3xl md:text-5xl font-bold">Create an invite-only place where you belong</h3>
-                    <p class="md:text-xl">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day
-                    without clogging up a group chat.</p>
+                    <h3 class="text-xl sm:text3xl md:text-5xl font-bold">
+                        Create an invite-only place where you belong
+                    </h3>
+                    <p class="md:text-xl">
+                        Discord servers are organized into topic-based channels where you
+                        can collaborate, share, and just talk about your day without
+                        clogging up a group chat.
+                    </p>
                 </div>
             </div>
         </section>
-
-        <!-- TODO: First Feature:  -->
-        <section class="md:h-[95vh] bg-white flex items-center justify-center">
-            <div class="md:max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between px-5 md:px-10">
-                <div class=""><img class="w-[100%]" src="./src/assets/home/Feature01.svg" alt=""></div>
-                <div class="md:w-[35%] flex flex-col justify-center gap-5 md:gap-7">
-                    <h3 class="text-xl sm:text3xl md:text-5xl font-bold">Create an invite-only place where you belong</h3>
-                    <p class="md:text-xl">Discord servers are organized into topic-based channels where you can collaborate,
-                        share, and just talk about your day
-                        without clogging up a group chat.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- TODO: First Feature:  -->
-        <section class="md:h-[95vh] bg-white flex items-center justify-center">
-            <div class="md:max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between px-5 md:px-10">
-                <div class=""><img class="w-[100%]" src="./src/assets/home/Feature01.svg" alt=""></div>
-                <div class="md:w-[35%] flex flex-col justify-center gap-5 md:gap-7">
-                    <h3 class="text-xl sm:text3xl md:text-5xl font-bold">Create an invite-only place where you belong</h3>
-                    <p class="md:text-xl">Discord servers are organized into topic-based channels where you can collaborate,
-                        share, and just talk about your day
-                        without clogging up a group chat.</p>
-                </div>
-            </div>
-        </section>
-        
     </main>
 
     <!-- TODO: Footer Section -->
     <footer class="bg-[#23272a]">
         <!-- TODO: Footer Wrapper Container -->
-        <div class="max-w-screen-xl mx-auto px-10 py-20">
+        <div class="max-w-screen-xl mx-auto px-7 py-20">
             <div class="pb-10 flex flex-col md:flex-row justify-between gap-10 md:gap-5">
                 <!-- TODO: Social Media Handle Links here... -->
                 <div class="md:basis-[20%] flex flex-col gap-5">
-                    <h1 class="font-['Gajraj_One'] text-4xl font-bold text-[#404eed] uppercase tracking-wide">Imagine a place</h1>
+                    <h1 class="font-['Gajraj_One'] text-4xl font-bold text-[#404eed] uppercase tracking-wide">
+                        Imagine a place
+                    </h1>
                     <div class="text-white">
                         <button class="flex items-center gap-2">
-                            <span class="h-[18px]"><img class="h-[100%]" src="./src/assets/footer/flag.png" alt=""></span>
+                            <span class="h-[18px]"><img class="h-[100%]" src="./src/assets/footer/flag.png" alt="" /></span>
                             <p class="text-sm">English, USA</p>
                             <span><i class="fa-solid fa-angle-down"></i></span>
                         </button>
@@ -140,52 +147,15 @@
                     </div>
                 </div>
 
-                <!-- TODO: Gap should be there between these So, I have used "flex (70 - 20)" -->
+                <!-- TODO: Gap should be there between these So, I have used "flex basis (70% nav - 20%)" and 10% of Gap-->
                 <!-- TODO: Footer Navigation here... -->
-                <nav class="md:basis-[70%] text-white flex flex-wrap justify-between md:justify-evenly gap-5 md:p-0">
-                    <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
-                        <h4 class="text-[#404eed]">Product</h4>
-                        <li><a class="hover:underline mt-5" href="#">Download</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Nitro</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Status</a></li>
-                    </ul>
-
-                    <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
-                        <h4 class="text-[#404eed]">Company</h4>
-                        <li><a class="hover:underline mt-5" href="#">About</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Jobs</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Branding</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Newsroom</a></li>
-                    </ul>
-
-                    <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
-                        <h4 class="text-[#404eed]">Resources</h4>
-                        <li><a class="hover:underline mt-5" href="#">College</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Support</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Safety</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Blog</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Feedback</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Developers</a></li>
-                        <li><a class="hover:underline mt-5" href="#">StreamKit</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Creators</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Community</a></li>
-                    </ul>
-
-                    <ul class="basis-[40%] md:flex-1 flex flex-col gap-2">
-                        <h4 class="text-[#404eed]">Policies</h4>
-                        <li><a class="hover:underline mt-5" href="#">Terms</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Privacy</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Cookie Settings</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Guidelines</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Acknowledgments</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Licenses</a></li>
-                        <li><a class="hover:underline mt-5" href="#">Moderation</a></li>
-                    </ul>
+                <nav id="footer-navigation" class="md:basis-[70%] text-white flex flex-wrap justify-between md:justify-evenly gap-5 md:p-0">
+                    <!-- TODO: DONE => Open `src/Helpers/navFooter.js` file to see the Code which is used to populate Footer Nav in this "Node" -->
                 </nav>
             </div>
 
             <!-- TODO: Divider in the Footer Section here... -->
-            <hr class="text-xl font-bold"/>
+            <hr class="text-xl font-bold" />
 
             <div class="flex justify-between items-center mt-8">
                 <!-- TODO: Logo -->
@@ -194,10 +164,11 @@
                     <span class="font-bold text-2xl text-white">Discord</span>
                 </a>
                 <!-- TODO: CTA Open Discord Button -->
-                <button class="px-5 py-2 rounded-full text-sm font-semibold bg-[#404eed] text-white hover:drop-shadow-2xl">Open Discord</button>
+                <button class="px-5 py-2 rounded-full text-sm font-semibold bg-[#404eed] text-white hover:drop-shadow-2xl">
+                    Open Discord
+                </button>
             </div>
         </div>
     </footer>
 </body>
-
 </html>
