@@ -16,8 +16,8 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="./src/Helpers/Footer.js" defer></script>
-    <script src="./Discord.js" defer></script>
+    <script type="module" src="./src/Helpers/Footer.js" defer></script>
+    <script type="module" src="./Discord.js" defer></script>
 </head>
 
 <body class="font-['Open_Sans'] m-0 p-0">
@@ -28,7 +28,7 @@
         <div class="max-w-screen-xl mx-auto px-5 sm:px-7 z-[999]">
             <header class="flex items-center justify-between py-5">
                 <!-- TODO: Logo -->
-                <a href="../../index.html" class="flex items-center gap-2">
+                <a href="#" class="flex items-center gap-2">
                     <span id="icon" class="text-white text-3xl"><i class="fa-brands fa-discord"></i></span>
                     <span class="font-bold text-2xl text-white">Discord</span>
                 </a>
@@ -66,8 +66,8 @@
                         Open Discord
                     </button>
 
-                    <!-- TODO: Hamburger Icon and Fucntion Call in `discord.js File` -->
-                    <button id="hamburger_Btn"><span class="text-white text-3xl"><i class="fa-solid fa-bars"></i></span></button>
+                    <!-- TODO: Hamburger Open Icon and Fucntion Call in `discord.js File` -->
+                    <button class="lg:hidden transition-all duration-500 ease-in-out" id="hamburger_OpenBtn"><span class="text-white text-3xl"><i class="fa-solid fa-bars"></i></span></button>
                 </div>
             </header>
         </div>
@@ -107,8 +107,26 @@
             <img class="hidden md:block md:absolute md:bottom-0 md:right-[-10%] lg:h-[275px] xl:h-[50%] transition-all duration-500 ease-in-out" src="./src/assets/home/RightHero.svg" alt="" />
         </div>
         <!-- TODO: Hamburger Primary Navigation -->
-        <div id="responsiveNavBar"
-            class="translate-x-[100%] absolute inset-y-0 right-0 w-[320px] h-[100vh] bg-white rounded-lg">
+        <div id="responsiveNavBar" class="translate-x-[100%] z-[999] absolute inset-y-0 right-0 w-[320px] bg-white rounded-lg px-7">
+            <header class="flex justify-between sticky top-0 inset-x-0 z-999 py-7">
+                <!-- TODO: Logo -->
+                <a href="#" class="flex items-center gap-2">
+                    <span id="icon" class="text-black text-3xl"><i class="fa-brands fa-discord"></i></span>
+                    <span class="font-bold text-2xl text-black">Discord</span>
+                </a>
+
+                <!-- TODO: Hamburger Close Icon and Fucntion Call in `discord.js File` -->
+                <button id="hamburger_CloseBtn"><span class="text-black text-3xl"><i class="fa-solid fa-xmark"></i></span></button>
+            </header>
+
+            <hr>
+
+            <nav id="responsiveNavBarList" class="relative flex-1 flex flex-col gap-2">
+            </nav>
+        </div>
+        <!-- TODO: Hamburger Primary Sub Navigation - Navigation within Navigation -->
+        <div id="expandedSubNavBar" class="translate-x-[100%] absolute inset-y-0 right-0 w-[320px] z-[9999] bg-white rounded-lg px-7">
+            
         </div>
 
     </div>
