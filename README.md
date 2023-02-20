@@ -44,8 +44,11 @@ export const getByID = (id) => {
 ```
 
 > 2. I have created the Array of List which looks like this...
+
 **To get the below Output**, instead of writing manually in `index.html` page, I have create an **`Array of Object`** and populated that into the **Hamburger NavBar** using **`Higher Order Function - map`**.
+
 ![](./screenshots/SubMenu.png)
+
  ```javascript
 const ResponsiveNavBarArray = [
     {
@@ -225,6 +228,7 @@ const footerNavList = [
 ]
 ```
 
+# My Project is Responsive :)
 ## Project Outputs for three Screens (Apple Ipad Air, Galaxy S20, Desktop) 
 **Open `screenshots` folder to view all the project's Output ScreenShots**
 

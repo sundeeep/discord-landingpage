@@ -1,3 +1,4 @@
+// TODO: DONE => Utility Functions to manipulate the DOM
 export const createEle = (type) => {
     try {
         const element = document.createElement(type);
@@ -24,6 +25,7 @@ export const getByID = (id) => {
     }
 }
 
+//TODO: DONE => selector variables to manipulate the dom.
 const hamburgerOpenBtn = getByID("hamburger_OpenBtn");
 const hamburgerCloseBtn = getByID("hamburger_CloseBtn");
 const responsiveNavBar = getByID("responsiveNavBar");
@@ -58,8 +60,8 @@ const closeResponsiveNavBar = () => {
 };
 hamburgerCloseBtn.addEventListener("click", ()=>closeResponsiveNavBar())
 
-// TODO: Responsive Nav-Bar Lists and SubLists
-
+//TODO: DONE => CONFIG- Driven UI
+// TODO: Responsive Nav-Bar Lists and SubLists in Responsive MODE - 
 const ResponsiveNavBarArray = [
     {
         navItem: "Home",
@@ -215,6 +217,7 @@ const ResponsiveNavBarArray = [
 ]
 
 const subNavBar = getByID("expandedSubNavBar");
+
 const expandSubNavListResponsive = (main) => {
     try {
         subNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
@@ -247,6 +250,9 @@ const responsiveNavBarList = getByID("responsiveNavBarList");
 const ul = createEle('ul');
 ul.setAttribute("class", "flex flex-col gap-5 py-5");
 
+//TODO: DONE => I am creating the entire Sub-NavBar dynamically whenever the we click the right option which can access the subNavList
+////TODO: DONE => In our case, there are two nav options ; `Safety` and `Mod Academy`
+
 ResponsiveNavBarArray.map((NavList)=>{
     const li = createEle('li');
     const a = createEle('a');
@@ -257,6 +263,8 @@ ResponsiveNavBarArray.map((NavList)=>{
         a.innerText = `${NavList.navItem}  >>>`
         a.classList.add("font-bold")
         addChild(li, a);
+
+        //TODO: DONE => EvenListener which invokes the Creation of SubNavbar `main` and call the Function `expandSubNavListResponsive(main);` which can bring that SubNavBar.
         li.addEventListener("click", ()=>{
                 const main = createEle('main');
                 main.setAttribute("class", "flex flex-col gap-5");
