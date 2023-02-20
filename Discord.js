@@ -335,6 +335,22 @@ ResponsiveNavBarArray.map((NavList)=>{
 
                 addChild(main, subNav);
 
+                const footer = createEle('section');
+                footer.setAttribute("class", "flex justify-center items-center sticky bottom-0 bg-white py-5")
+                const download = createEle('button');
+                const downIcon = createEle('span');
+                const downText = createEle('span');
+                downText.innerText = "Download for Windows";
+                const i2 = createEle('i');
+                i2.setAttribute("class", "fa-solid fa-download");
+                addChild(downIcon, i2);
+                addChild(download, downIcon);
+                addChild(download, downText);
+                
+                download.setAttribute("class", "bg-[#404eed] hover:bg-[#383CC1] px-3 py-3 rounded-full text-lg text-white mt-3");
+                addChild(footer, download);
+
+                addChild(main, footer);
                 expandSubNavListResponsive(main);
         })
     }
