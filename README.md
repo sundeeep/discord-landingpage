@@ -10,8 +10,13 @@ Netlify Link : [Discord Landing Page Clone](https://discord-clone-sandeep.netlif
 - Vannila Javascript ES6
 
 ## Why Javascript! (Open `discord.js` file)
+- Open **`Discord.js`** and **`src/Helpers/Footer.js`** to read **javascript** which I have used to complete this project.
 - You can get a simple doubt that why I have used so much Javascript.
 - I have used Javascript to populate the **Navbar and SubNavlist** in the responsive mode.
+- To achieve **Config Driven UI**, I have use Javascript, in case of NavBar and SubNavBar population into the web-page.
+- I have followed **Functional Programming Pradigm** .
+
+> I have used **Closures** in my design decision of **Event Listeners** of my project, Refer them in **discord.js** file.
 
 > 1. I have created utility functions to follow **Functional Programming Pradigm** like **Create, select, Add** elements to the DOM as shown below:
 
