@@ -9,4 +9,23 @@ Netlify Link : [Discord Landing Page Clone](https://discord-clone-sandeep.netlif
 - Tailwind CSS
 - Vannila Javascript ES6
 
-### 
+## Project Outputs for three Screens (Apple Ipad Air, Galaxy S20, Desktop) 
+
+### Mobile View (Galaxy S20)
+![Mobile View](./screenshots/MobileView.png)
+
+#### Mobile View Hamburger
+![](./screenshots/HamburgerMenu.png)
+
+#### Mobile View Hamburger Expanded
+![](./screenshots/HamburgerExpanded.png)
+
+#### Mobile View Hamburger SubNavBar Expanded (Click `Safety` or `Mod Academy`)
+![](./screenshots/SubMenu.png)
+
+
+### Tablet View (Apple Ipad Air)
+![Tablet View](./screenshots/TabletView.png)
+
+### Desktop View (All Large Screens)
+![Desktop View](./screenshots/DesktopView.png)
