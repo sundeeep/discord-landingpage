@@ -13,7 +13,37 @@ Netlify Link : [Discord Landing Page Clone](https://discord-clone-sandeep.netlif
 - You can get a simple doubt that why I have used so much Javascript.
 - I have used Javascript to populate the **Navbar and SubNavlist** in the responsive mode.
 
-> 1. I have created the Array of List which looks like this...
+> 1. I have created utility functions to follow **Functional Programming Pradigm** like **Create, select, Add** elements to the DOM as shown below:
+
+```javascript
+export const createEle = (type) => {
+    try {
+        const element = document.createElement(type);
+        return element;
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+export const addChild = (parent,child) => {
+    try {
+        parent.appendChild(child);
+    } catch (error) {
+        console.log(error.message);
+    }
+} 
+
+export const getByID = (id) => {
+    try {
+        const element = document.getElementById(id);
+        return element;
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+```
+
+> 2. I have created the Array of List which looks like this...
 **To get the below Output**, instead of writing manually in `index.html` page, I have create an **`Array of Object`** and populated that into the **Hamburger NavBar** using **`Higher Order Function - map`**.
 ![](./screenshots/SubMenu.png)
  ```javascript
@@ -172,8 +202,8 @@ const ResponsiveNavBarArray = [
 ]
 ```
 
-> 2. Open **`src/Helpers/Footer.js`** file to see the code, which I have used to populate the **Footer Navigation** as shown below:
-![]()
+> 3. Open **`src/Helpers/Footer.js`** file to see the code, which I have used to populate the **Footer Navigation** as shown below:
+![](./screenshots/FooterNavBar.png)
 ```javascript
 const footerNavList = [
     {
