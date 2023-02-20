@@ -6,7 +6,7 @@ Netlify Link : [Discord Landing Page Clone](https://discord-clone-sandeep.netlif
 
 ### Tech Stack, I've used!
 - HTML5
-- Tailwind CSS
+- Tailwind CSS (FlexBox, Positions)
 - Vannila Javascript ES6
 
 ## Why Javascript! (Open `discord.js` file)
