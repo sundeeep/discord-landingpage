@@ -1,8 +1,8 @@
 ## Discord Landing Page : Introduction
 This project is given by iNeuron, the EdTech Company as part of their recruiting assessment process for the role: **Software Engineer Trainee**. This assignment's main goal is to clone the [Discord Landing Page](https://discord.com/).
 
-## Deployed Netlify Link of My Project.
-Netlify Link : [Discord Landing Page Clone](https://discord-clone-sandeep.netlify.app/)
+## Deployed Vercel Link of My Project.
+Vercel Deployed Link : [Discord Landing Page Clone](https://discoordd-sandeep-k-dasari-ineuron.vercel.app/)
 
 ### Tech Stack, I've used!
 - HTML5
