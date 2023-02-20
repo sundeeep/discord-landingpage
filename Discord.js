@@ -30,6 +30,8 @@ const hamburgerOpenBtn = getByID("hamburger_OpenBtn");
 const hamburgerCloseBtn = getByID("hamburger_CloseBtn");
 const responsiveNavBar = getByID("responsiveNavBar");
 
+// TODO: DONE => Use Closures to design the Event Listeners.
+// TODO: DONE => The function which opens the Hamburger Menu
 const expandResponsiveNavBar = () => {
     try {
         responsiveNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
@@ -43,6 +45,7 @@ const expandResponsiveNavBar = () => {
 };
 hamburgerOpenBtn.addEventListener("click", () => expandResponsiveNavBar());
 
+// TODO: DONE => The function which closes the Hamburger Menu
 const closeResponsiveNavBar = () => {
     try {
         responsiveNavBar.classList.add(
@@ -59,6 +62,37 @@ const closeResponsiveNavBar = () => {
     }
 };
 hamburgerCloseBtn.addEventListener("click", ()=>closeResponsiveNavBar())
+
+
+const subNavBar = getByID("expandedSubNavBar");
+// TODO: DONE => The function which opens the subNavList for `Safety` and `Mod Academy` with in NavList in responsive Mode.
+const expandSubNavListResponsive = (main) => {
+    try {
+        subNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
+
+        if(subNavBar.childNodes[0]){
+            subNavBar.replaceChild(main, subNavBar.childNodes[0]);
+            subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
+            return;
+        }
+
+        addChild(subNavBar, main)
+        subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
+        
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+// TODO: DONE => The function which closes the subNavList for `Safety` and `Mod Academy` with in NavList in responsive Mode.
+const closeSubNavListResponsive = () => {
+    try {
+        subNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
+        subNavBar.classList.replace("translate-x-[0%]", "translate-x-[100%]");
+    } catch (error) {
+        console.log(error.message);
+    }
+}
 
 //TODO: DONE => CONFIG- Driven UI
 // TODO: Responsive Nav-Bar Lists and SubLists in Responsive MODE - 
@@ -216,39 +250,11 @@ const ResponsiveNavBarArray = [
     }
 ]
 
-const subNavBar = getByID("expandedSubNavBar");
-
-const expandSubNavListResponsive = (main) => {
-    try {
-        subNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
-
-        if(subNavBar.childNodes[0]){
-            subNavBar.replaceChild(main, subNavBar.childNodes[0]);
-            subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
-            return;
-        }
-
-        addChild(subNavBar, main)
-        subNavBar.classList.replace("translate-x-[100%]", "translate-x-[0%]");
-        
-    } catch (error) {
-        console.log(error.message);
-    }
-}
-
-const closeSubNavListResponsive = () => {
-    try {
-        subNavBar.classList.add("transition-all", "duration-500", "ease-in-out")
-        subNavBar.classList.replace("translate-x-[0%]", "translate-x-[100%]");
-    } catch (error) {
-        console.log(error.message);
-    }
-}
-
 const responsiveNavBarList = getByID("responsiveNavBarList");
 
 const ul = createEle('ul');
 ul.setAttribute("class", "flex flex-col gap-5 py-5");
+
 
 //TODO: DONE => I am creating the entire Sub-NavBar dynamically whenever the we click the right option which can access the subNavList
 ////TODO: DONE => In our case, there are two nav options ; `Safety` and `Mod Academy`
@@ -331,12 +337,12 @@ ResponsiveNavBarArray.map((NavList)=>{
 
                 expandSubNavListResponsive(main);
         })
-    }else{
+    }
+    
+    else{
         a.innerText = NavList.navItem;
         addChild(li, a);
     }
-
     addChild(ul, li)
 })
-
 addChild(responsiveNavBarList, ul);
