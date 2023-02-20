@@ -13,6 +13,7 @@
     />
 
     <script src="https://kit.fontawesome.com/33c43788b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -136,7 +137,7 @@
         <!-- TODO: First Feature:  -->
         <section class="bg-white text-black ">
             <div class="max-w-screen-xl mx-auto h-[78vh] md:h-[40vh] lg:h-[75vh] px-5 sm:px-7 flex items-center justify-center">
-                <div class="flex flex-col md:flex-row justify-between gap-5">
+                <div data-aos="fade-up" class="flex flex-col md:flex-row justify-between gap-5">
                     <div class="transition-all duration-500 ease-in-out">
                         <img src="./src/assets/home/Feature01.svg" alt="">
                     </div>
@@ -151,7 +152,7 @@
         <!-- TODO: Second Feature:  -->
         <section class="bg-gray-100 text-black">
             <div class="max-w-screen-xl mx-auto h-[78vh] md:h-[40vh] lg:h-[75vh] px-5 sm:px-7 flex items-center justify-center">
-                <div class="flex flex-col md:flex-row-reverse justify-between gap-5">
+                <div data-aos="fade-up" class="flex flex-col md:flex-row-reverse justify-between gap-5">
                     <div class="transition-all duration-500 ease-in-out">
                         <img src="./src/assets/home/Feature02.svg" alt="">
                     </div>
@@ -166,7 +167,7 @@
         <!-- TODO: Third Feature:  -->
         <section class="bg-white text-black ">
             <div class="max-w-screen-xl mx-auto h-[78vh] md:h-[40vh] lg:h-[75vh] px-5 sm:px-7 flex items-center justify-center">
-                <div class="flex flex-col md:flex-row justify-between gap-5">
+                <div data-aos="fade-up" class="flex flex-col md:flex-row justify-between gap-5">
                     <div class="transition-all duration-500 ease-in-out">
                         <img src="./src/assets/home/Feature03.svg" alt="">
                     </div>
@@ -181,11 +182,11 @@
         <!-- TODO: Fourth Feature -->
         <section class="bg-gray-100 text-black ">
             <div class="max-w-screen-xl mx-auto px-5 sm:px-7 my-16 flex flex-col gap-5 items-center justify-center">
-                <div class="lg:w-[85%] flex flex-col gap-5">
+                <div data-aos="fade-up" class="lg:w-[85%] flex flex-col gap-5">
                     <h1 class="md:text-center tracking-wider font-['Gajraj_One'] foont-bold text-2xl sm:text-3xl md:text-5xl">Reliable tech for staying close</h1>
-                    <h5 class="font-semibold text-sm sm:text-md md:text-xl">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</h5>
+                    <h5 class="lg:text-center font-semibold text-sm sm:text-md md:text-xl">Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</h5>
                 </div>
-                <div class="lg:h-[100vh]">
+                <div data-aos="fade-up" class="lg:h-[100vh]">
                     <img class="lg:h-[100%]"
                     src="./src/assets/home/Feature04.svg" alt="">
                 </div>
@@ -251,5 +252,12 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1100,
+        });
+    </script>
 </body>
 </html>
