@@ -13,6 +13,8 @@ Netlify Link : [Discord Landing Page Clone](https://discord-clone-sandeep.netlif
 - You can get a simple doubt that why I have used so much Javascript.
 - I have used Javascript to populate the **Navbar and SubNavlist** in the responsive mode.
 #### I have created the Array of List which looks like this...
+**To get the below Output**, instead of writing manually in `index.html` page, I have create an **`Array of Object`** and populated that into the **Hamburger NavBar** using **`Higher Order Function - map`**.
+![](./screenshots/SubMenu.png)
  ```JSON
 const ResponsiveNavBarArray = [
     {
