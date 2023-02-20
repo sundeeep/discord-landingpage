@@ -13,7 +13,7 @@ Netlify Link : [Discord Landing Page Clone](https://discord-clone-sandeep.netlif
 - You can get a simple doubt that why I have used so much Javascript.
 - I have used Javascript to populate the **Navbar and SubNavlist** in the responsive mode.
 #### I have created the Array of List which looks like this...
-> ```json
+ ```JSON
 const ResponsiveNavBarArray = [
     {
         navItem: "Home",
