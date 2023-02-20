@@ -9,13 +9,14 @@ Netlify Link : [Discord Landing Page Clone](https://discord-clone-sandeep.netlif
 - Tailwind CSS
 - Vannila Javascript ES6
 
-### Why Javascript! (Open `discord.js` file)
+## Why Javascript! (Open `discord.js` file)
 - You can get a simple doubt that why I have used so much Javascript.
 - I have used Javascript to populate the **Navbar and SubNavlist** in the responsive mode.
-#### I have created the Array of List which looks like this...
+
+> 1. I have created the Array of List which looks like this...
 **To get the below Output**, instead of writing manually in `index.html` page, I have create an **`Array of Object`** and populated that into the **Hamburger NavBar** using **`Higher Order Function - map`**.
 ![](./screenshots/SubMenu.png)
- ```JSON
+ ```javascript
 const ResponsiveNavBarArray = [
     {
         navItem: "Home",
@@ -168,6 +169,29 @@ const ResponsiveNavBarArray = [
         navItem: "Careers",
         subNavList: [],
     }
+]
+```
+
+> 2. Open **`src/Helpers/Footer.js`** file to see the code, which I have used to populate the **Footer Navigation** as shown below:
+![]()
+```javascript
+const footerNavList = [
+    {
+        footerNavTitle: "Product",
+        footerNavList: ['Download', 'Nitro', 'Status'],
+    },
+    {
+        footerNavTitle: "Company",
+        footerNavList: ['About', 'Jobs', 'Branding', 'Newsroom'],
+    },
+    {
+        footerNavTitle: "Resources",
+        footerNavList: ['College', 'Support', 'Safety', 'Blog', 'Feedback', 'Developers', 'StreamKit', 'Creators', 'Community'],
+    },
+    {
+        footerNavTitle: "Policies",
+        footerNavList: ["Terms", 'Privacy', 'Cookie Settings', 'Guidelines', 'Acknoeledgments', 'Licenses', 'Moderation'],
+    },
 ]
 ```
 
